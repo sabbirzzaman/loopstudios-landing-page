@@ -1,0 +1,56 @@
+.header {
+  height: 100vh;
+  background-image: url("../../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @include brakepoints-up(large) {
+    background-image: url("../../images/desktop/image-hero.jpg");
+
+    .overlay {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: $darkOverlay;
+    }
+  }
+
+  .is_active {
+    visibility: hidden;
+  }
+
+  // Toggle Open
+  &.open {
+    .navigation__toggle {
+      > span:first-child {
+        opacity: 1;
+        transform: rotate(45deg);
+        transform-origin: right;
+        top: 11px;
+        margin: 0;
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(5px);
+        margin: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
+        transform-origin: right;
+        top: -12px;
+      }
+    }
+
+    .is_active {
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@keyframes slide {
+    from {
+      left: -100px;
+      visibility: hidden;
+    }
+
+    1% {
+      left: -100px;
+      visibility: hidden;
+    }
+
+    to {
+      left: 0px;
+      visibility: visible;
+    }
+  }
+
+.slide {
+    animation: slide 0.5s forwards
+}

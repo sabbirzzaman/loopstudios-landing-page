@@ -1,0 +1,22 @@
+.hero {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+
+  @include brakepoints-up(large) {
+    height: 80vh;
+  }
+
+  &__title {
+    h1 {
+      border: 2px solid $white;
+      padding: 1.25rem;
+
+      @include brakepoints-up(large) {
+        width: 60%;
+        position: relative;
+        z-index: 10;
+      }
+    }
+  }
+}

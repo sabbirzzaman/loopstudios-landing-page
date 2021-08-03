@@ -1,0 +1,101 @@
+.portfolio {
+  &__headline {
+    text-align: center;
+    margin-bottom: 3.125rem;
+
+    @include brakepoints-up(large) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: 1.25rem;
+    margin-bottom: 40px;
+
+    @include brakepoints-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+    }
+  }
+
+  &__item {
+    height: 6.25rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    @include brakepoints-up(large) {
+      height: 31.25rem;
+      padding: 1.875rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+      }
+    }
+
+    &.item_1 {
+      background-image: url("../../images/mobile/image-deep-earth.jpg");
+      @include brakepoints-up(large) {
+        background-image: url("../../images/desktop/image-deep-earth.jpg");
+      }
+    }
+    &.item_2 {
+      background-image: url("../../images/mobile/image-night-arcade.jpg");
+      @include brakepoints-up(large) {
+        background-image: url("../../images/desktop/image-night-arcade.jpg");
+      }
+    }
+    &.item_3 {
+      background-image: url("../../images/mobile/image-soccer-team.jpg");
+      @include brakepoints-up(large) {
+        background-image: url("../../images/desktop/image-soccer-team.jpg");
+      }
+    }
+    &.item_4 {
+      background-image: url("../../images/mobile/image-grid.jpg");
+      @include brakepoints-up(large) {
+        background-image: url("../../images/desktop/image-grid.jpg");
+      }
+    }
+    &.item_5 {
+      background-image: url("../../images/mobile/image-from-above.jpg");
+      @include brakepoints-up(large) {
+        background-image: url("../../images/desktop/image-from-above.jpg");
+      }
+    }
+    &.item_6 {
+      background-image: url("../../images/mobile/image-pocket-borealis.jpg");
+      @include brakepoints-up(large) {
+        background-image: url("../../images/desktop/image-pocket-borealis.jpg");
+      }
+    }
+    &.item_7 {
+      background-image: url("../../images/mobile/image-curiosity.jpg");
+      @include brakepoints-up(large) {
+        background-image: url("../../images/desktop/image-curiosity.jpg");
+      }
+    }
+    &.item_8 {
+      background-image: url("../../images/mobile/image-fisheye.jpg");
+      @include brakepoints-up(large) {
+        background-image: url("../../images/desktop/image-fisheye.jpg");
+      }
+    }
+  }
+
+  &__mbutton {
+    text-align: center;
+  }
+}

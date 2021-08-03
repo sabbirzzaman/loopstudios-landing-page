@@ -1,0 +1,34 @@
+.about {
+  text-align: center;
+
+  @include brakepoints-up(large) {
+    position: relative;
+    text-align: unset;
+  }
+
+  &__image {
+    margin-bottom: 1.25rem;
+    @include brakepoints-up(large) {
+      margin: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__content {
+    padding: 0rem 0.9375rem;
+    @include brakepoints-up(large) {
+      padding: 4rem;
+      width: 35%;
+      position: absolute;
+      background: #fff;
+      left: 50%;
+      bottom: 5%;
+    }
+
+    p {
+      color: $gray;
+    }
+  }
+}

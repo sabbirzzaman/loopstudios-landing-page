@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="dist/css/style.css" />
+
+    <title>Loopstudios landing page</title>
+  </head>
+  <body class="">
+    <header class="header">
+      <div class="overlay"></div>
+      <div class="navigation container">
+        <nav class="flex flex-jc-sb flex-ai-c">
+          <div class="navigation__logo">
+            <a href="/">
+              <img src="images/logo.svg" alt="Site Logo" />
+            </a>
+          </div>
+
+          <a
+            href="#"
+            id="hamBurgerMenu"
+            class="navigation__toggle hide-for-desktop"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <div class="navigation__menu hide-for-mobile">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+          </div>
+        </nav>
+
+        <div
+          class="navigation__mobile_menu is_active container hide-for-desktop"
+        >
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+
+      <div class="hero container">
+        <div class="hero__title">
+          <h1>Immersive experiences that deliver</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="about">
+      <div class="container container-px">
+        <div class="about__image hide-for-desktop">
+          <img src="images/mobile/image-interactive.jpg" alt="Interactive" />
+        </div>
+
+        <div class="about__image hide-for-mobile">
+          <img src="images/desktop/image-interactive.jpg" alt="Interactive" />
+        </div>
+
+        <div class="about__content">
+          <h2>The leader in interactive VR</h2>
+
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container container-pb">
+        <div class="portfolio__headline">
+          <div class="portfolio__title">
+            <h2>Our creations</h2>
+          </div>
+          <div class="portfolio__button hide-for-mobile">
+            <button class="button">See all</button>
+          </div>
+        </div>
+
+        <div class="portfolio__grid">
+          <div class="portfolio__item item_1">
+            <h3>Deep <br />earth</h3>
+          </div>
+          <div class="portfolio__item item_2">
+            <h3>Night <br />arcade</h3>
+          </div>
+          <div class="portfolio__item item_3">
+            <h3>Soccer <br />team VR</h3>
+          </div>
+          <div class="portfolio__item item_4">
+            <h3>The <br />grid</h3>
+          </div>
+          <div class="portfolio__item item_5">
+            <h3>From up <br />above VR</h3>
+          </div>
+          <div class="portfolio__item item_6">
+            <h3>Pocket <br />borealis</h3>
+          </div>
+          <div class="portfolio__item item_7">
+            <h3>The <br />curiosity</h3>
+          </div>
+          <div class="portfolio__item item_8">
+            <h3>Make it <br />fisheye</h3>
+          </div>
+        </div>
+
+        <div class="portfolio__mbutton hide-for-desktop">
+          <button class="button">See all</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__logo">
+            <a href="#"><img src="images/logo.svg" alt="Footer Logo" /></a>
+          </div>
+
+          <div class="footer__links">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+          </div>
+
+          <div class="footer__social">
+            <a href="#">
+              <img src="images/icon-facebook.svg" alt="Facebook" />
+            </a>
+            <a href="#">
+              <img src="images/icon-twitter.svg" alt="Twitter" />
+            </a>
+            <a href="#">
+              <img src="images/icon-pinterest.svg" alt="Pinterest" />
+            </a>
+            <a href="#">
+              <img src="images/icon-instagram.svg" alt="Instagram" />
+            </a>
+          </div>
+
+          <div class="footer__copyright">
+            © 2021 Loopstudios. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app/js/script.js"></script>
+  </body>
+</html>
